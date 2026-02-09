@@ -8,7 +8,6 @@
 *.crt
 *.cer
 *.der
-*.pub
 *_key
 *_rsa
 *_dsa

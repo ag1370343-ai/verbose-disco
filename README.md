@@ -53,10 +53,20 @@ chmod 600 keys/private/my-first-key.pem
 
 ### Option 2: Environment Variables
 
+⚠️ **Warning**: Environment variables can be exposed in process listings and shell history. Use with caution.
+
 ```bash
+# Disable history to avoid exposing the key
+set +o history
+
 # Store key content in environment variable
 export MY_PRIVATE_KEY=$(cat keys/private/my-first-key.pem)
+
+# Re-enable history
+set -o history
 ```
+
+**Note**: For production environments, prefer Option 3 (Secret Management Systems) instead.
 
 ### Option 3: Secret Management System (Production)
 
