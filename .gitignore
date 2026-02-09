@@ -6,9 +6,6 @@
 *.jks
 *.keystore
 
-# Except for this specific file that's already tracked
-!private_rsa_key.pem
-
 # Security: Ignore credential files
 *.credentials
 .env

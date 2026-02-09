@@ -11,13 +11,19 @@ This repository contains cryptographic key material.
 
 ## Security Warnings
 
-⚠️ **IMPORTANT**: This repository contains a private RSA key that should be handled with extreme care:
+⚠️ **CRITICAL SECURITY ISSUE**: This repository contains a private RSA key that has been committed to version control.
 
-1. **Never share this key** - Private keys should never be shared publicly or committed to public repositories
-2. **Rotate immediately** - If this key has been exposed publicly, it should be considered compromised and rotated immediately
-3. **Use proper permissions** - In production environments, private keys should have restricted file permissions (e.g., `chmod 600`)
-4. **Use secure storage** - Consider using secret management systems (e.g., AWS Secrets Manager, HashiCorp Vault, Azure Key Vault) instead of storing keys in version control
-5. **Remove from git history** - If this key was accidentally committed, consider using tools like `git-filter-repo` or BFG Repo-Cleaner to remove it from git history
+**IMMEDIATE ACTIONS REQUIRED:**
+1. **Consider this key COMPROMISED** - Any private key committed to version control should be considered exposed
+2. **Rotate the key immediately** - Generate a new key pair and update all systems using this key
+3. **Remove from repository** - Delete this file and remove it from git history using tools like `git-filter-repo` or BFG Repo-Cleaner
+4. **Never commit private keys** - Private keys should never be stored in version control systems
+
+**Best Practices Going Forward:**
+1. **Use secure storage** - Use secret management systems (e.g., AWS Secrets Manager, HashiCorp Vault, Azure Key Vault)
+2. **Use proper permissions** - In production environments, private keys should have restricted file permissions (e.g., `chmod 600`)
+3. **Use .gitignore** - Prevent accidental commits by ignoring key files (*.pem, *.key, etc.)
+4. **Audit regularly** - Regularly scan repositories for accidentally committed secrets
 
 ## Best Practices for Key Management
 
