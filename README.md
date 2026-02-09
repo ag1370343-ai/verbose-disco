@@ -10,7 +10,7 @@ This repository contains a decryption utility that uses an RSA private key to de
 ## Requirements
 
 ```bash
-pip install cryptography
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -25,6 +25,13 @@ python decrypt.py <base64_encrypted_data>
 
 ```bash
 python decrypt.py -f <encrypted_file>
+```
+
+### Use a custom key file
+
+```bash
+python decrypt.py <base64_encrypted_data> <key_file>
+python decrypt.py -f <encrypted_file> <key_file>
 ```
 
 ## Example
