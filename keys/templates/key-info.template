@@ -1,0 +1,12 @@
+Key Name: [Enter key name here]
+Purpose: [e.g., SSH authentication, API signing, encryption]
+Algorithm: [e.g., RSA 4096-bit, ECDSA P-256, Ed25519]
+Created: [YYYY-MM-DD]
+Expires: [YYYY-MM-DD or "Never"]
+Used By: [List systems/services using this key]
+Notes: [Any additional information]
+
+---
+IMPORTANT: This is a template file. 
+Copy it to ../private/your-key-name-info.txt and fill in the details.
+The private/ directory is gitignored and safe for storing sensitive information.

@@ -1,0 +1,25 @@
+# Cryptographic keys and sensitive data
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+*.pub
+*_key
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+.env
+.env.local
+secrets/
+private/
+
+# But allow example/template files
+!*.example
+!*.template
+!*.sample
