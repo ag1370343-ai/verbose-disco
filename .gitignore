@@ -1,0 +1,25 @@
+# Security: Ignore private keys and certificates
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Except for this specific file that's already tracked
+!private_rsa_key.pem
+
+# Security: Ignore credential files
+*.credentials
+.env
+.env.*
+secrets.yml
+secrets.yaml
+credentials.json
+
+# Security: Ignore SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.ppk
